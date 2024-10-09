@@ -107,7 +107,20 @@ Use the set rhosts command to set the parameter and run the module, as follows:
 
 After scanning, you can also brute force MySQL root account via Metasploit's auxiliary(scanner/mysql/mysql_login) module.
 ## OUTPUT:
+![image](https://github.com/user-attachments/assets/6a837a6a-4dab-404d-b4a4-a9fab286c7ce)
 
+
+set the PASS_FILE parameter to the wordlist path available inside /usr/share/wordlists:
+```
+set PASS_FILE /usr/share/wordlists/rockyou.txt Then, specify the IP address of the target machine with the RHOSTS command. set RHOSTS
+```
+Set BLANK_PASSWORDS to true in case there is no password set for the root account.
+```
+set BLANK_PASSWORDS true
+```
+
+## OUTPUT:
+![image](https://github.com/user-attachments/assets/acb336fc-4f10-4a89-aa8e-004163937dfb)
 
 ## RESULT:
 The Metasploit framework for reconnaissance is  examined successfully
